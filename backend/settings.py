@@ -26,7 +26,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['the-cage-online.onrender.com', '127.0.0.1', 'localhost']
 
 # Application definition
 
@@ -177,12 +177,13 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-#CORS_ALLOWED_ORIGINS = [
-#    'http://localhost:3000',  
-#    'http://localhost:8000',
-#]
+CORS_ALLOWED_ORIGINS = [
+    'https://the-cage-online.onrender.com',
+    'http://localhost:3000',  
+    'http://localhost:8000',
+]
 
-CORS_ALLOW_ALL_ORIGINS = True
+#CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOW_CREDENTIALS = True
 
 # allauth settings
