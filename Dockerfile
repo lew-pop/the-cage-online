@@ -21,8 +21,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Run migrations and collect static files
-CMD python manage.py migrate && \
+RUN python manage.py migrate && \
     python manage.py collectstatic --no-input
 
-# Start the Django development server (for production, use a WSGI server like Gunicorn)
+# Start the Gunicorn server
 CMD ["gunicorn", "backend.wsgi:application", "--bind", "0.0.0.0:8000"]    
