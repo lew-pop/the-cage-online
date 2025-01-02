@@ -8,6 +8,11 @@ ENV PYTHONUNBUFFERED 1
 # Set working directory
 WORKDIR /app
 
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    gcc \
+    && rm -rf /var/lib/apt/lists/*
+    
 # Install Python dependencies
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
@@ -20,4 +25,4 @@ CMD python manage.py migrate && \
     python manage.py collectstatic --no-input
 
 # Start the Django development server (for production, use a WSGI server like Gunicorn)
-CMD ["gunicorn", "backend.wsgi:application", "--bind", "0.0.0.0:8000"]    
+CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"] 
