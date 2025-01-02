@@ -1,0 +1,51 @@
+[
+    {
+        "id": "1",
+        "image": "https://the-cage-online-assets.s3.us-west-1.amazonaws.com/build/CandyKing.png",
+        "subtitle": "287 Products",
+        "title": "Candy King",
+        "link": "/shop-filtered-grid/disposable"
+    },
+    {
+        "id": "2",
+        "image": "https://the-cage-online-assets.s3.us-west-1.amazonaws.com/build/AirFactory.png",
+        "subtitle": "65 Products",
+        "title": "Air Factory",
+        "link": "/shop-filtered-grid/primeBar"
+    },
+    {
+        "id": "4",
+        "image": "https://the-cage-online-assets.s3.us-west-1.amazonaws.com/brands/slider/Flum.png",
+        "subtitle": "62 Products",
+        "title": "Flum",
+        "link": "/shop-filtered-grid/flum"
+    },   
+    {
+        "id": "5",
+        "image": "https://the-cage-online-assets.s3.us-west-1.amazonaws.com/brands/slider/LostMary.png",
+        "subtitle": "9 Products",
+        "title": "Lost Mary",
+        "link": "/shop-brand-grid/lostmary"
+    },
+    {
+        "id": "6",
+        "image": "https://the-cage-online-assets.s3.us-west-1.amazonaws.com/brands/slider/GeekBar.png",
+        "subtitle": "67 Products",
+        "title": "Geek Bar",
+        "link": "/shop-filtered-grid/geekbar"
+    },
+    {
+        "id": "7",
+        "image": "https://the-cage-online-assets.s3.us-west-1.amazonaws.com/brands/slider/Daze.png",
+        "subtitle": "5 Products",
+        "title": "Daze",
+        "link": "/shop-filtered-grid/daze"
+    },
+    {
+        "id": "8",
+        "image": "https://the-cage-online-assets.s3.us-west-1.amazonaws.com/brands/slider/PodJuice.png",
+        "subtitle": "5 Products",
+        "title": "Pod Juice",
+        "link": "/shop-filtered-grid/podjuice"
+    }
+]

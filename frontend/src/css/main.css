@@ -1,0 +1,54 @@
+.main-box {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px 50px;
+    color: #ffffff;
+    background-color: #27252a;
+    border: 5px dashed transparent;
+    border-image: linear-gradient(45deg, #7c65a9, #3fdda7, #7c65a9, #3fdda7)1;
+
+}
+
+.alert {
+    width: 400px;
+    border-color: grey;
+    position: absolute;
+    right: 20px;
+    top: 100px;
+    animation: alertFrame 1s;
+    background-color: rgb(13, 110, 253);
+    color: white;
+    z-index: 99;
+}
+
+@keyframes alertFrame {
+    0% {
+        right: -500px;
+    }
+
+    100% {
+        right: 20px;
+    }
+}
+
+#logout {
+    cursor: pointer;
+}
+
+.login-button {
+    background-color: #7c65a9 !important;
+    color: #ffffff !important;
+    border: 2px dashed transparent;
+    /* Set the border style to dashed and color to transparent */
+    border-image: linear-gradient(45deg, #7c65a9, #3fdda7, #7c65a9, #3fdda7)1;
+   
+}
+.login-button:hover {
+    background-color: #5f4e80 !important;
+}
+.login-link {
+    color: #3fdda7;
+    &:hover {
+        color: #7c65a9;
+    }
+}
