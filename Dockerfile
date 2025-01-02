@@ -20,4 +20,4 @@ CMD python manage.py migrate && \
     python manage.py collectstatic --no-input
 
 # Start the Django development server (for production, use a WSGI server like Gunicorn)
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"] 
+CMD ["gunicorn", "backend.wsgi:application", "--bind", "0.0.0.0:8000"]    
