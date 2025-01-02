@@ -21,7 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-io($%^l5h&)eq2r#i!8e+(^q6w@5_a(do70&1rqz=25)b%okc+'
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -121,11 +121,11 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'cageDB',
-        'USER': 'lewpop',
-        'PASSWORD': 'bluesClues77&*',
-        'HOST': 'the-cage-identifier.c3wwg60s2d1x.us-west-1.rds.amazonaws.com',
-        'PORT': '5432',
+        'NAME': os.environ.get('DB_NAME'),
+        'USER': os.environ.get('DB_USER'),
+        'PASSWORD': os.environ.get('DB_PASSWORD'),
+        'HOST': os.environ.get('DB_HOST'),
+        'PORT': os.environ.get('DB_PORT'),
     }
 }
 
@@ -200,7 +200,7 @@ EMAIL_HOST = 'live.smtp.mailtrap.io'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'smtp@mailtrap.io'
-EMAIL_HOST_PASSWORD = '8f404108aef4530b138715c05930872f'
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
 
 AUTH_USER_MODEL = "base.CustomUserModel"
 
